@@ -21,9 +21,9 @@ A simple image puzzle game made using Xamarin Android.
 
 ![Options](/Images/Options.png?raw=true "Options")
 
-* In-game Acheivements
+* In-game Achievements
 
-![Acheivements](/Images/Acheivements.png?raw=true "Acheivements")
+![Achievements](/Images/Achievements.png?raw=true "Achievements")
 
 * In-game Leaderboard
 
