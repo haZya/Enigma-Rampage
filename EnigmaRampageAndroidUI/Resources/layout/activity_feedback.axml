@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/feedbackPanel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100">
+    <ProgressBar
+        android:id="@+id/feedbackProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:max="100"
+        android:backgroundTint="@color/colorWhite"
+        android:indeterminateTint="@color/colorGreen"
+        android:layout_marginTop="-7dp"
+        android:visibility="gone" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="10" />
+    <TextView
+        android:text="Feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        android:layout_weight="15" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="10" />
+    <RatingBar
+        android:id="@+id/feedbackRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:numStars="5"
+        android:isIndicator="false"
+        android:progressTint="@color/colorAccent"
+        style="@style/Base.Widget.AppCompat.RatingBar" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="10" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="15"
+        android:weightSum="100">
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtFeedback"
+            android:maxLines="5"
+            android:inputType="textCapSentences|textMultiLine"
+            android:hint="Feedback (Optional)"
+            android:layout_weight="60"
+            android:drawableLeft="@drawable/ic_star_blue"
+            android:drawablePadding="10dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_weight="30">
+        <Button
+            android:text="Send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnFeedback"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_accent_style"
+            android:textColor="@color/colorWhite"
+            android:textSize="13dp"
+            android:drawableLeft="@drawable/ic_send_white" />
+    </LinearLayout>
+</LinearLayout>

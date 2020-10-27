@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="25dp"
+    android:paddingBottom="25dp"
+    android:minWidth="250dp"
+    android:minHeight="300dp"
+    android:weightSum="100">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="20">
+        <Button
+            android:text="User Sign Up"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/diaFPnlBtnSignUp"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_orange_style"
+            android:textColor="@color/colorWhite"
+            android:drawableLeft="@drawable/ic_signup_m_white"
+            android:textSize="15dp" />
+    </LinearLayout>
+    <TextView
+        android:text="OR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorRed"
+        android:gravity="center"
+        android:layout_weight="20" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="20">
+        <Button
+            android:text="Member Login"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/diaFPnlBtnLogin"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_accent_style"
+            android:textColor="@color/colorWhite"
+            android:drawableLeft="@drawable/ic_login_m_white"
+            android:textSize="15dp" />
+    </LinearLayout>
+    <TextView
+        android:text="OR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorRed"
+        android:gravity="center"
+        android:layout_weight="20" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="20">
+        <Button
+            android:text="Enter as a guest"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/diaFPnlBtnGuest"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_border_green_style"
+            android:textColor="@color/colorGreen"
+            android:drawableLeft="@drawable/ic_guest_green"
+            android:textSize="15dp" />
+    </LinearLayout>
+</LinearLayout>

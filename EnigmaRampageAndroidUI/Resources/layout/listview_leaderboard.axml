@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100">
+    <TextView
+        android:text="#"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:id="@+id/lbTvRank"
+        android:layout_weight="5"
+        android:textColor="@color/colorRed"
+        android:gravity="center" />
+    <TextView
+        android:text="Username"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:id="@+id/lbTvUsername"
+        android:layout_weight="15"
+        android:textColor="@color/colorRed"
+        android:gravity="center" />
+    <TextView
+        android:text="Level"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:id="@+id/lbTvLvl"
+        android:layout_weight="6"
+        android:textColor="@color/colorRed"
+        android:gravity="center" />
+    <TextView
+        android:text="XP Points"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:id="@+id/lbTvXP"
+        android:layout_weight="15"
+        android:textColor="@color/colorRed"
+        android:gravity="center" />
+    <TextView
+        android:text="SR Points"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:id="@+id/lbTvSR"
+        android:layout_weight="15"
+        android:textColor="@color/colorRed"
+        android:gravity="center" />
+    <TextView
+        android:text="Play Time"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:id="@+id/lbTvPlayTime"
+        android:layout_weight="15"
+        android:textColor="@color/colorRed"
+        android:gravity="center" />
+    <TextView
+        android:text="Golds"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:id="@+id/lbTvGolds"
+        android:layout_weight="9"
+        android:textColor="@color/colorRed"
+        android:gravity="center" />
+    <TextView
+        android:text="Silvers"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:id="@+id/lbTvSilvers"
+        android:layout_weight="9"
+        android:textColor="@color/colorRed"
+        android:gravity="center" />
+    <TextView
+        android:text="Bronze"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:id="@+id/lbTvBronzes"
+        android:layout_weight="11"
+        android:textColor="@color/colorRed"
+        android:gravity="center" />
+</LinearLayout>

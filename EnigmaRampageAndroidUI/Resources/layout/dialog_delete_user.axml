@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="25dp"
+    android:paddingBottom="25dp"
+    android:minWidth="400dp"
+    android:minHeight="350dp"
+    android:weightSum="100">
+    <TextView
+        android:text="Delete Profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorRed"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:layout_weight="25" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="25"
+        android:weightSum="100">
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/diaDelTxtPwd"
+            android:maxLines="1"
+            android:inputType="textPassword"
+            android:imeOptions="flagNoExtractUi"
+            android:hint="Password"
+            android:layout_weight="60"
+            android:drawableLeft="@drawable/ic_password_red"
+            android:drawablePadding="10dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="25"
+        android:weightSum="100">
+        <TextView
+            android:text="Are you sure you want to delete this account permanently?"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorRed"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_weight="60" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="25">
+        <Button
+            android:text="Delete Profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/diaDelBtnDel"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_red_style"
+            android:textColor="@color/colorWhite"
+            android:textSize="13dp"
+            android:drawableLeft="@drawable/ic_delete_white" />
+    </LinearLayout>
+</LinearLayout>

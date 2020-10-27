@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="130dp"
+    android:layout_height="match_parent"
+    android:weightSum="100">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="10" />
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtLvl"
+        android:textColor="@color/colorAccent"
+        android:layout_gravity="center"
+        android:layout_weight="20"
+        android:visibility="invisible" />
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtMode"
+        android:textColor="@color/colorAccent"
+        android:layout_gravity="center"
+        android:layout_weight="20"
+        android:visibility="invisible" />
+    <TextView
+        android:text="Idle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtStatus"
+        android:textColor="@color/colorAccent"
+        android:layout_gravity="center"
+        android:layout_weight="20" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutSwaps"
+        android:layout_gravity="center"
+        android:layout_weight="20"
+        android:weightSum="100"
+        android:visibility="invisible">
+        <TextView
+            android:text="Swaps"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorOrange"
+            android:layout_weight="40"
+            android:paddingRight="5dp"
+            android:gravity="right" />
+        <TextView
+            android:text=":"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorGreen"
+            android:layout_weight="10"
+            android:gravity="center" />
+        <TextView
+            android:text="∞"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtSwaps"
+            android:textColor="@color/colorRed"
+            android:layout_weight="40"
+            android:paddingLeft="5dp"
+            android:gravity="left" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutTime"
+        android:layout_gravity="center"
+        android:layout_weight="20"
+        android:weightSum="100"
+        android:visibility="invisible">
+        <TextView
+            android:text="Time"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorOrange"
+            android:layout_weight="40"
+            android:paddingRight="5dp"
+            android:gravity="right" />
+        <TextView
+            android:text=":"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorGreen"
+            android:layout_weight="10"
+            android:gravity="center" />
+        <TextView
+            android:text="∞"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTime"
+            android:textColor="@color/colorRed"
+            android:layout_weight="40"
+            android:paddingLeft="5dp"
+            android:gravity="left" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ProgressBar
+        android:id="@+id/profProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:max="100"
+        android:backgroundTint="@color/colorWhite"
+        android:indeterminateTint="@color/colorGreen"
+        android:layout_marginTop="-7dp"
+        android:visibility="gone" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:stretchColumns="1"
+            android:id="@+id/profPanel">
+            <TextView
+                android:text="Profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:textSize="30dp" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="50dp"
+                android:gravity="center"
+                android:weightSum="100">
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="30">
+                    <ImageView
+                        android:layout_width="240px"
+                        android:layout_height="240px"
+                        android:id="@+id/profPic"
+                        android:padding="1dp"
+                        android:background="@drawable/background_rounded_border"
+                        android:src="@drawable/default_pic"
+                        android:layout_gravity="center" />
+                    <TextView
+                        android:text="Player"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorRed"
+                        android:paddingLeft="30dp"
+                        android:layout_gravity="bottom"
+                        android:id="@+id/profTxtUsername" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_gravity="center"
+                android:weightSum="100">
+                <TextView
+                    android:text="Full Name"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:textColor="@color/colorOrange"
+                    android:paddingLeft="49dp"
+                    android:gravity="right" />
+                <TextView
+                    android:text=":"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:textColor="@color/colorGreen"
+                    android:gravity="center" />
+                <TextView
+                    android:text="Player One"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:layout_weight="70"
+                    android:gravity="left"
+                    android:id="@+id/profTxtFullName" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_gravity="center"
+                android:weightSum="100">
+                <TextView
+                    android:text="Email"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:textColor="@color/colorOrange"
+                    android:paddingLeft="86dp"
+                    android:gravity="right" />
+                <TextView
+                    android:text=":"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:textColor="@color/colorGreen"
+                    android:gravity="center" />
+                <TextView
+                    android:text="player@example.com"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:layout_weight="70"
+                    android:gravity="left"
+                    android:id="@+id/profTxtEmail" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_gravity="center"
+                android:weightSum="100">
+                <TextView
+                    android:text="Date of Birth"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:textColor="@color/colorOrange"
+                    android:paddingLeft="30dp"
+                    android:gravity="right" />
+                <TextView
+                    android:text=":"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:textColor="@color/colorGreen"
+                    android:gravity="center" />
+                <TextView
+                    android:text="01/01/0001"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:layout_weight="70"
+                    android:gravity="left"
+                    android:id="@+id/profTxtDOB" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingRight="30dp"
+                android:paddingBottom="30dp"
+                android:paddingTop="30dp">
+                <Button
+                    android:text="Update"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/profBtnUpdate"
+                    android:background="@drawable/btn_orange_style"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="13dp"
+                    android:drawableLeft="@drawable/ic_update_white" />
+                <Button
+                    android:text="Delete"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/profBtnDel"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/btn_red_style"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="13dp"
+                    android:drawableLeft="@drawable/ic_delete_white" />
+            </LinearLayout>
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>

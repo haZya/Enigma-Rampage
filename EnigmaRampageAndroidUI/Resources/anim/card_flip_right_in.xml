@@ -1,0 +1,24 @@
+﻿<set xmlns:android="http://schemas.android.com/apk/res/android">
+  <!--Set alpha to 0 before animation-->
+  <objectAnimator
+      android:valueFrom="1.0"
+      android:valueTo="0.0"
+      android:propertyName="alpha"
+      duration="0" />
+
+  <!--Rotation-->
+  <objectAnimator
+      android:valueFrom="180"
+      android:valueTo="0"
+      android:propertyName="rotationY"
+      android:interpolator="@android:interpolator/accelerate_decelerate"
+      duration="@integer/card_flip_time_full" />
+
+  <!--Half-way through the rotation set the alpha to 1-->
+  <objectAnimator
+      android:valueFrom="0.0"
+      android:valueTo="1.0"
+      android:propertyName="alpha"
+      android:startOffset="@integer/card_flip_time_half"
+      duration="1" />
+</set>

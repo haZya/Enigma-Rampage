@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/reportToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    <android.support.design.widget.TabLayout
+        android:id="@+id/reportTablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:tabSelectedTextColor="@color/colorWhite"
+        app:tabTextColor="@color/colorGray"
+        app:tabIndicatorColor="@color/colorWhite"
+        app:tabMode="fixed"
+        app:tabGravity="fill">
+        <android.support.design.widget.TabItem
+            android:id="@+id/reportTabAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age Analysis" />
+        <android.support.design.widget.TabItem
+            android:id="@+id/reportTabPlayTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play Time Analysis" />
+    </android.support.design.widget.TabLayout>
+    <ProgressBar
+        android:id="@+id/reportsProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:max="100"
+        android:backgroundTint="@color/colorWhite"
+        android:indeterminateTint="@color/colorGreen"
+        android:layout_marginTop="-7dp"
+        android:visibility="gone" />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
